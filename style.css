@@ -17,7 +17,7 @@
 }
 
 body{
-    font-family:'poppins';
+    font-family: "poppins";
     overflow-x:hidden;
     font-size:13px
 }
@@ -39,7 +39,7 @@ a{
     text-decoration:none
 }
 img{
-    width:100%;
+    width:50%;
     display:block
 }
 .wrapper{
@@ -86,7 +86,7 @@ img{
 
 .readmore a:hover, .readmore.readmoreWhite a:hover {
     color: #fff;
-    background: #155b2e;
+    background: #3078d7;
 }
 
 .readmore.readmoreWhite a {
@@ -161,7 +161,7 @@ img{
     content: '';
     width: 8px;
     height: 8px;
-    background: #155b2e;
+    background: #3078d7;
     position: absolute;
     left: 50%;
     bottom: 7px;
@@ -171,7 +171,7 @@ img{
 
 .heading h2 {
     position: relative;
-    color: #155b2e;
+    color: #3078d7;
     font: 400 25px 'Poppins Light';
     letter-spacing: 2px;
 }
@@ -194,7 +194,7 @@ img{
 }
 
 .logo {
-    width: 310px;
+    width: 350px;
     display: block;
     position: absolute;
     left: 0;
@@ -205,7 +205,7 @@ img{
 .logo a {
     display: block;
     padding: 5px 0;
-    background: #fff;
+    background: #3078d7;
     position: relative;
     z-index: 1;
 }
@@ -216,7 +216,7 @@ img{
     top: 0;
     bottom: 0;
     right: -7%;
-    width: 30%;
+    width: 2%;
     background: #fff;
     transform: skewX(-20deg);
     z-index: -1;
@@ -228,7 +228,7 @@ img{
     right: 0;
     padding: 10px 60px 10px 10px;
     z-index: 99;
-    background: #155b2e;
+    background: #3078d7;
     width: 100%;
 }
 
@@ -363,7 +363,7 @@ img{
 }
 
 .searchContainer .searchBox button:hover {
-    background: #155b2e;
+    background: #3078d7;
 }
 .burgerMenu {
     position: absolute;
@@ -510,6 +510,18 @@ img{
 .navigationContainer .mainNavigation ul li a:hover {
     color: #fff;
 }
+.tagline{
+    font-size: 40px;
+    display: flex;
+    margin: 3%;
+    padding: 2%;
+    color: rgb(220, 220, 255);
+}
+.sofadi-one-regular {
+    font-family: "Sofadi One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 .navigationContainer .mainNavigation > ul > li > a.navBtn1:after,
 .menuChild ul li a span {
@@ -546,7 +558,7 @@ img{
     left: 100%;
     top: 0;
     min-height: 100%;
-    background: #155b2e;
+    background:#3078d7;
     z-index: 1;
     transition: all 400ms;
 }
@@ -646,13 +658,13 @@ img{
 
 .bannerText .readmore a {
     margin-left: 0;
-    background: #155b2e;
+    background: #3078d7;
     border: none;
 }
 
 .bannerText .readmore a:hover {
     background: #fff;
-    color: #155b2e;
+    color: #3078d7;
 }
 
 .banner .controls {
@@ -735,7 +747,7 @@ img{
     left: 5px;
     top: 5px;
     bottom: 5px;
-    background: #155b2e;
+    background: #3078d7;
     text-align: center;
     color: #fff;
 }
@@ -768,7 +780,7 @@ img{
 }
 
 .marqueeContainer p a:hover {
-    color: #155b2e;
+    color: #3078d7;
     text-decoration: underline;
 }
 
@@ -994,7 +1006,7 @@ img{
     bottom: 0;
     margin-left: -35%;
     background: #fff;
-    border: 7px solid #155b2e;
+    border: 7px solid #3078d7;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.37);
     z-index: 9;
     display: none;
@@ -1063,7 +1075,7 @@ img{
 }
 
 .calendar-btn a:hover {
-    background: #155b2e;
+    background: #3078d7;
     color: #fff;
 }
 
@@ -1381,7 +1393,7 @@ img{
 .inside-leftMenu-Box .randomHead h4 {
     position: relative;
     padding: 10px;
-    background: #155b2e;
+    background: #3078d7;
     color: #fff;
     border-radius: 0 0 5px 5px;
     letter-spacing: 1px;
@@ -1419,7 +1431,7 @@ img{
     padding: 10px;
     line-height: 20px;
     font-size: 14px;
-    color: #155b2e;
+    color: #3078d7;
     background: rgba(255, 255, 255, 0.67);
     transition: all 300ms ease-in-out;
     text-align: left;
@@ -1856,7 +1868,7 @@ img{
 }
 
 .tc .table td a:hover {
-    color: #155b2e;
+    color: #3078d7;
 }
 
 .infoBox {
@@ -1877,7 +1889,7 @@ img{
     font: 18px 'poppinsblack';
     padding-left: 10px;
     border-left: 2px solid;
-    color: #155b2e;
+    color: #3078d7;
     display: block;
     margin-bottom: 10px;
 }
@@ -1961,7 +1973,7 @@ img{
     line-height: 35px;
     text-align: center;
     border-radius: 50%;
-    background: #155b2e;
+    background: #3078d7;
     color: #fff;
     font-size: 14px;
 }
@@ -2027,7 +2039,7 @@ img{
 }
 
 .fields .submit:hover {
-    background: #155b2e;
+    background: #3078d7;
 }
 
 .videoContainer {
@@ -2175,7 +2187,7 @@ img{
 }
 
 .fields .submit:hover {
-    background: #155b2e;
+    background: #3078d7;
 }
 
 .videoContainer {
@@ -2589,8 +2601,8 @@ img{
     display: block;
     margin: 10px 0 20px;
     padding: 0 0 10px;
-    border-bottom: 1px solid #155b2e;
-    color: #155b2e;
+    border-bottom: 1px solid #3078d7;
+    color: #3078d7;
 }
 
 .mainGalleryList {
@@ -2607,14 +2619,14 @@ img{
     text-align: left;
     padding: 10px;
     margin: 0 0.5%;
-    color: #155b2e;
+    color: #3078d7;
     line-height: 22px;
     margin-bottom: 8px;
     overflow: hidden;
 }
 
 .mainGalleryList li a {
-    color: #155b2e;
+    color: #3078d7;
 }
 
 .photogalleryBox li {
@@ -2643,7 +2655,7 @@ img{
 }
 
 .photogalleryBox li p {
-    color: #155b2e;
+    color: #3078d7;
     display: block;
     height: auto;
     line-height: 22px;
@@ -2717,7 +2729,7 @@ img{
 }
 
 .new-add-bl {
-    background-color: #169d4e;
+    background-color: #0966a9;
     -webkit-animation: fee-payment 1s infinite;
     animation: fee-payment 1s infinite;
 }
@@ -2726,23 +2738,6 @@ img{
     transform: rotate(97deg);
 }
 
-@-webkit-keyframes fee-payment {
-    25% {
-        background: #115828;
-        background: #731d0b;
-        background: #44ff80;
-        background: #731d0b;
-    }
-}
-
-@keyframes fee-payment {
-    25% {
-        background: #115828;
-        background: #731d0b;
-        background: #44ff80;
-        background: #731d0b;
-    }
-}
 
 .color-black {
     background: #02020291;
