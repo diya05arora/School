@@ -20,7 +20,7 @@ body{
     font-family: "poppins";
     overflow-x:hidden;
     font-size:13px;
-    background-color : #002d14;/* Dark Green background*/
+    background-color : #405598;
     color : #000;
     margin : 0;
     padding : 0;
@@ -1212,7 +1212,7 @@ img{
 }
 
 .footer {
-    background: url(images/footer1.jpg) center right no-repeat #11331d;
+    background: url(images/footer1.jpg) center right no-repeat #405598;
     background-size: cover;
     position: relative;
     bottom: 0;
@@ -1227,7 +1227,7 @@ img{
     right: 0;
     top: 0;
     bottom: 0;
-    background: rgba(17, 51, 29, 0.97);
+    background: #405598;
     z-index: -1;
 }
 
@@ -1247,7 +1247,7 @@ img{
 }
 
 .footAdd p {
-    color: #407b58;
+    color: white;
     line-height: 20px;
     padding-bottom: 10px;
     position: relative;
@@ -1265,7 +1265,7 @@ img{
 }
 
 .footAdd p a:hover {
-    color: #407b58;
+    color: white;
 }
 
 .footLinks {
@@ -1293,7 +1293,7 @@ img{
 }
 
 .footLinks ul li a {
-    color: #407b58;
+    color: white;
 }
 
 .footLinks ul li a:hover {
@@ -1432,7 +1432,7 @@ img{
 }
 
 .breadcrumb ul li a:hover {
-    color: #a8eac0;
+    color: white;
 }
 
 .inside-parent {
@@ -1465,7 +1465,8 @@ img{
 .inside-leftMenu-Box {
     width: 100%;
     float: left;
-    background: linear-gradient(#7fd28d38, #c6eac6);
+    background: white;
+    background: white;
     margin-top: 10px;
     padding: 0 20px 10px;
     position: relative;
@@ -2782,7 +2783,7 @@ img{
     width: 100%;
     margin-bottom: 20px;
     color: #fff;
-    background: #4cab6e;
+    background: white;
     padding: 10px;
     text-align: center;
     font-size: 18px;
