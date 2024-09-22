@@ -395,6 +395,13 @@ img{
     top: 0;
     z-index: 999;
 }
+@media (max-width: 370px) {
+    .logo {
+      width: 300px; /* Adjust the size to whatever fits your design */
+      /* You can add other properties if needed */
+    }
+  }
+  
 
 .logo a {
     display: block;
@@ -410,7 +417,7 @@ img{
     top: 0;
     bottom: 0;
     right: -7%;
-    width: 2%;
+    width: 5.5%;
     background: #fff;
     transform: skewX(-20deg);
     z-index: -1;
@@ -558,72 +565,76 @@ img{
 
 .searchContainer .searchBox button:hover {
     background: #3078d7;
+}/* Hide menu and burger initially for large screens */
+.burgerMenu {
+    display: none;
 }
+
+/* Basic styles for burger icon */
 .burgerMenu {
     position: absolute;
     right: 10px;
-    top: 8px;
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    padding: 8px 0;
+    top: 10px;
+    width: 40px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     cursor: pointer;
-    border: 2px solid #fff;
-    display: block;
-    transition: all 0.12s linear;
     z-index: 9999;
 }
 
-.menu-icon-wrapper {
+.burgerMenu .bar {
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    transition: all 0.3s;
+}
+
+/* Mobile Menu: Initially hidden */
+.mainNavigation {
+    display: none;
     position: absolute;
-    left: 2px;
-    top: 2px;
-    width: 35px;
-    height: 35px;
-    pointer-events: none;
-    transform: scale(0.517);
-    opacity: 1;
-    transition: opacity 0.12s linear;
+    right: 0;
+    top: 50px;
+    background: #fff;
+    width: 100%;
+    text-align: left;
+    padding: 20px;
 }
 
-.menu-icon-wrapper svg {
-    position: absolute;
-    top: -33px;
-    left: -33px;
-    transform: scale(0.1);
-    transform-origin: 0 0;
+.mainNavigation.open {
+    display: block;
 }
 
-.menu-icon-wrapper svg path {
-    stroke: #fff;
-    stroke-width: 40px;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    fill: transparent;
-    transition: stroke-dasharray 0.5s;
+/* Burger Menu Transition */
+.burgerMenu.open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
 }
 
-.burgerMenu:hover,
-.burgerMenu.open {
-    border-color: rgba(255, 255, 255, 0.6);
+.burgerMenu.open .bar:nth-child(2) {
+    opacity: 0;
 }
 
-.burgerMenu:hover .menu-icon-wrapper,
-.burgerMenu.open .menu-icon-wrapper {
-    opacity: 1;
+.burgerMenu.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
 }
 
-.burgerMenu.open svg path.path1 {
-    stroke-dasharray: 2901.57px, 5258.15px, 240px;
+/* Responsive breakpoint */
+@media (max-width: 768px) {
+    .burgerMenu {
+        display: flex;
+    }
+
+    .mainNavigation {
+        display: none;
+    }
+
+    .mainNavigation.open {
+        display: block;
+    }
 }
 
-.burgerMenu.open svg path.path2 {
-    stroke-dasharray: 400px, 600px, 0;
-}
-
-.burgerMenu.open svg path.path3 {
-    stroke-dasharray: 3496.56px, 6448.11px, 240px;
-}
 
 .navigationContainer {
     position: absolute;
@@ -3651,3 +3662,16 @@ img{
 .myButton:active {
     background-color: #004080; /* Even darker blue when clicked */
 }
+
+@media (max-width: 750px) {
+    .tagline {
+      font-size: 16px; 
+    }
+  }
+  
+@media (max-width: 370px) {
+    .tagline {
+      font-size: 10px; 
+    }
+  }
+  
