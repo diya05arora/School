@@ -1317,7 +1317,7 @@ img{
 }
 
 .footer {
-    background: url(images/footer1.jpg) center right no-repeat #405598;
+    background: url(images/footer1.jpg) center right no-repeat #0a122d;
     background-size: cover;
     position: relative;
     bottom: 0;
@@ -1332,7 +1332,7 @@ img{
     right: 0;
     top: 0;
     bottom: 0;
-    background: #405598;
+    background: #03185c;
     z-index: -1;
 }
 
@@ -3627,5 +3627,27 @@ img{
     }
 }
 
+.myButton {
+    position: fixed;  /* Fixes the button in the viewport */
+    bottom: 20px;     /* Distance from the bottom */
+    right: 20px;      /* Distance from the right */
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF; /* Blue background */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;     /* Remove underline from link */
+    display: inline-block;     /* Ensures the element behaves like a button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 9999;            /* Ensure it's on top */
+}
 
+.myButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
 
+.myButton:active {
+    background-color: #004080; /* Even darker blue when clicked */
+}

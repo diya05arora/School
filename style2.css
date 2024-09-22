@@ -1,0 +1,34 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure full height for the body */
+    background-color: #3078d7;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+.container {
+    display: flex;              /* Use Flexbox */
+    flex-wrap: wrap;           /* Allow items to wrap onto the next line */
+    justify-content: center;    /* Center items horizontally */
+    align-items: center;        /* Center items vertically */
+    height: 100vh;             /* Full height of the viewport */
+    padding: 10px;             /* Optional padding */
+}
+
+.box {
+    flex: 0 250px;           /* Grow to fill space, base size of 150px */
+    margin: 10px;              /* Space between boxes */
+    background-color: #f0f0f0; /* Light background for boxes */
+    display: flex;             /* Center image inside the box */
+    justify-content: center;    /* Center the image horizontally */
+    align-items: center;        /* Center the image vertically */
+    overflow: hidden;          /* Hide overflow to maintain box shape */
+}
+
+.box img {
+    max-width: 100%;           /* Ensure images fit within the box */
+    max-height: 100%;          /* Maintain aspect ratio */
+    object-fit: cover;         /* Cover the box, maintaining aspect ratio */
+}
