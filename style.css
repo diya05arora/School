@@ -19,8 +19,97 @@
 body{
     font-family: "poppins";
     overflow-x:hidden;
-    font-size:13px
+    font-size:13px;
+    background-color : #002d14;/* Dark Green background*/
+    color : #000;
+    margin : 0;
+    padding : 0;
 }
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.box h3 {
+    background-color: #1a7139; /* Green header background */
+    color: #fff;
+    padding: 10px;
+    margin-top: -30px;
+    border-radius: 10px 10px 0 0;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.description p {
+    font-size: 16px;
+    color: #555;
+}
+
+.message-content {
+    font-size: 16px;
+    text-align: justify;
+    color: #555;
+    line-height: 1.6;
+}
+
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Gallery */
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Wings */
+.wings-list {
+    list-style: none;
+    padding: 0;
+}
+
+.wings-list li {
+    background-color: #ffc1c1; /* Default background color */
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: #000;
+}
+
+.wings-list li:nth-child(2) { background-color: #d4ea96; } /* Junior Wing */
+.wings-list li:nth-child(3) { background-color: #e6d7ff; } /* Middle Wing */
+
 ::selection{
     background:#51B88D;
     color:#000
