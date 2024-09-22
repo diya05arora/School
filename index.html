@@ -831,67 +831,61 @@
                 1st, the school timings will be adjusted to 8:30 AM - 3:00 PM.
         </div>
         <div class="container">
-            <!-- Director Principal Box -->
+            <!-- Principal's Message -->
             <div class="box">
-                <h3>Principal's Message</h3>
-                <img src="images/principal.jpg" alt="Director Principal" class="profile-pic">
-
-                <p>Principal</p>
-                <p><em>“Welcome to the new Session 2024–25!”</em></p>
-                <div class="message-content">
-                    <p>"Success comes to those who work hard and stays with those who don’t rest on the past," Education
-                        is not merely the acquirement of facts but also of values which help us improve the different
-                        faces of mankind. It ensures that we leave the world a far better place than we found it.</p>
-
-                    <p>We enterprise to map academic excellence with a good human value system, which in quality ways is
-                        ingrained in the culture of the school. To achieve this, we strongly feel that a paradigm shift
-                        in the minds of all stakeholders should take place so that when the school becomes the hub to
-                        initiate and formalize education, it has its tenets at home where it is further strengthened.
-                        Our commitment to such education will always persist in all our endeavors.</p>
-
-                    <p>Academic excellence with character and personality development is our ultimate goal. The
-                        well-chalked-out academic and co-curricular programs enable the students to attain their full
-                        potential and develop life skills. The academic work is centered on highly personalized
-                        attention and supervision.</p>
-                </div>
+                <h2>Principal's Message</h2>
+                <img src="images/principal.jpg" alt="Principal Image" class="profile-pic">
+                <p>
+                    "Welcome to the new Session 2024-25. Success comes to those who work hard and stay with those who don’t rest on the past." 
+                    <span id="principal-more" class="more-content">
+                        Education is not merely the acquirement of facts but also values which help improve the different facets of mankind... 
+                        (Full Principal's message here.)
+                    </span>
+                    <br>
+                    <a href="javascript:void(0)" class="read-more" onclick="toggleContent('principal-more')">Read More</a>
+                </p>
             </div>
-<<<<<<< HEAD
-        
-            
-        
-=======
-
-            <!-- Gallery Box -->
-            <div class="box gallery">
-                <h3>Gallery</h3>
-                <img src="images/independence_day.jpg">
-                <img src="images/gallery2.jpg">
-                <img src="images/gallery3.jpg">
-            </div>
-
->>>>>>> 779af7cc174f6f858a70a2aa373a54a1a8e11186
-            <!-- Wings Box -->
+    
+            <!-- Director's Message -->
             <div class="box">
-                <h3>Schools</h3>
-                <ul class="wings-list">
-                    <li>Primary Wing</li>
-                    <li>Junior Wing</li>
-                    <li>Middle Wing</li>
-                </ul>
+                <h2>Director's Message</h2>
+                <img src="images/director.png" alt="Director Image" class="profile-pic">
+                <p>
+                    Every child is like a seed which has the potential to grow if nourished with love and care under the right guidance.
+                    <span id="director-more" class="more-content">
+                        Childhood is the best time to lay the foundation of core values essential for the overall development of future citizens...
+                        (Full Director's message here.)
+                    </span>
+                    <br>
+                    <a href="javascript:void(0)" class="read-more" onclick="toggleContent('director-more')">Read More</a>
+                </p>
+            </div>
+    
+            <!-- Schools Section -->
+            <div class="box">
+                <h2>Schools</h2>
+                <button>Primary Wing</button>
+                <button>Junior Wing</button>
+                <button>Middle Wing</button>
             </div>
         </div>
+    
+        <script>
+            function toggleContent(id) {
+                var content = document.getElementById(id);
+                var link = content.previousElementSibling.nextElementSibling;
+    
+                if (content.style.display === "none" || content.style.display === "") {
+                    content.style.display = "inline";
+                    link.innerHTML = "Read Less";
+                } else {
+                    content.style.display = "none";
+                    link.innerHTML = "Read More";
+                }
+            }
+        </script>
 
 
-<<<<<<< HEAD
-=======
-
-
-
-
-
-
-
->>>>>>> 779af7cc174f6f858a70a2aa373a54a1a8e11186
         <div class="fullwidth footer" id="">
 
 
