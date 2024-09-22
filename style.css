@@ -237,6 +237,12 @@ img{
     color: #5d8d63;
 }
 
+.aim{
+    display: flex;
+    color: white;
+    background: #3078d7;
+}
+
 .heading {
     width: 430px;
     display: table;
