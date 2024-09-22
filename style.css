@@ -29,33 +29,89 @@ body{
 .container {
     display: flex;
     justify-content: space-around;
-    padding: 50px;
-}
-
-.box {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: #033d06; /* Dark background to match the page's look */
     padding: 20px;
-    text-align: center;
+    border-radius: 15px;
 }
-
-.box h3 {
-    background-color: #1a7139; /* Green header background */
-    color: #fff;
+.box {
+    background-color: #ffffff; /* White background inside each box */
+    border: 2px solid #2c3e50; /* Border color matching the dark theme */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for 3D effect */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.box h2 {
+    background-color: #009879; /* Greenish background for the heading */
+    color: #ffffff; /* White text */
     padding: 10px;
-    margin-top: -30px;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
+    margin: -20px -20px 15px -20px; /* Stretch heading to match box width */
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 .profile-pic {
-    border-radius: 50%;
     width: 80px;
     height: 80px;
-    object-fit: cover;
-    margin-bottom: 10px;
+    border-radius: 50%;
+    margin: 15px auto; /* Center the image */
+    border: 2px solid #009879; /* Add border around the profile picture */
 }
+.box p {
+    color: #2c3e50; /* Darker text color */
+    font-size: 0.9em;
+    line-height: 1.4em; /* Better line spacing for readability */
+    text-align: justify;
+}
+
+button:nth-child(1) {
+    background-color: #ff6f61; /* Attractive red for Primary Wing */
+    color: white;
+}
+
+button:nth-child(2) {
+    background-color: #f1c40f; /* Bright yellow for Junior Wing */
+    color: white;
+}
+
+button:nth-child(3) {
+    background-color: #8e44ad; /* Purple for Middle Wing */
+    color: white;
+}
+
+button {
+    border: none;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15); /* Button shadow effect */
+}
+
+button:hover {
+    opacity: 0.9; /* Slightly darker on hover */
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
 
 .description p {
     font-size: 16px;
@@ -3537,3 +3593,6 @@ img{
         left: 5px;
     }
 }
+
+
+
