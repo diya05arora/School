@@ -26,89 +26,92 @@ body{
     padding : 0;
 }
 
+/* Container styling */
 .container {
     display: flex;
     justify-content: space-around;
-    padding: 50px;
+    margin: 20px auto;
+    max-width: 1200px;
 }
 
+/* Box styling with uniform color */
 .box {
-    background-color: #fff;
+    background-color: rgb(199, 223, 255); /* Light blue color */
+    border: 1px solid #ccc;
     border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    width: 300px;
     padding: 20px;
+    width: 30%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 200px;
 }
 
-.box h3 {
-    background-color: #1a7139; /* Green header background */
-    color: #fff;
-    padding: 10px;
-    margin-top: -30px;
-    border-radius: 10px 10px 0 0;
+/* Headings styling */
+h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.5em;
 }
 
+/* Profile picture styling */
 .profile-pic {
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    margin-bottom: 10px;
-}
-
-.description p {
-    font-size: 16px;
-    color: white;
-}
-
-.message-content {
-    font-size: 16px;
-    text-align: justify;
-    color: #555;
-    line-height: 1.6;
-}
-
-.button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #fff;
-    border: 2px solid #000;
-    border-radius: 25px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.button:hover {
-    background-color: #000;
-    color: #fff;
-}
-
-/* Gallery */
-.gallery img {
-    width: 100%;
-    border-radius: 10px;
     margin-bottom: 15px;
 }
 
-/* Wings */
-.wings-list {
-    list-style: none;
-    padding: 0;
+/* Paragraph styling */
+p {
+    color: #1a1a1a; /* Darker text color for contrast */
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    flex-grow: 1;
 }
 
-.wings-list li {
-    background-color: #ffc1c1; 
-    margin: 10px 0;
-    padding: 15px;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 10px;
-    color: #000;
+/* Colorful Button Styling */
+button:nth-child(1) {
+    background-color: #f39c12; /* Vibrant orange for Primary Wing */
+    color: white;
 }
 
-.wings-list li:nth-child(2) { background-color: #d4ea96; } /* Junior Wing */
-.wings-list li:nth-child(3) { background-color: #e6d7ff; } /* Middle Wing */
+button:nth-child(2) {
+    background-color: #2ecc71; /* Bright green for Junior Wing */
+    color: white;
+}
+
+button:nth-child(3) {
+    background-color: #3498db; /* Attractive blue for Middle Wing */
+    color: white;
+}
+
+button {
+    border: none;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    opacity: 0.9; /* Slightly darker on hover */
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
 
 ::selection{
     background:#51B88D;
