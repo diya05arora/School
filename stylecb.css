@@ -368,49 +368,11 @@ img{
     transition: all 0.3s;
 }
 
-/* Mobile Menu: Initially hidden */
-.mainNavigation {
-    display: none;
-    position: absolute;
-    right: 0;
-    top: 50px;
-    background: #fff;
-    width: 100%;
-    text-align: left;
-    padding: 20px;
-}
 
-.mainNavigation.open {
-    display: block;
-}
 
-/* Burger Menu Transition */
-.burgerMenu.open .bar:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-}
 
-.burgerMenu.open .bar:nth-child(2) {
-    opacity: 0;
-}
 
-.burgerMenu.open .bar:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-}
 
-/* Responsive breakpoint */
-@media (max-width: 768px) {
-    .burgerMenu {
-        display: flex;
-    }
-
-    .mainNavigation {
-        display: none;
-    }
-
-    .mainNavigation.open {
-        display: block;
-    }
-}
 
 
 .navigationContainer {
