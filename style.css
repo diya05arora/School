@@ -20,7 +20,7 @@ body{
     font-family: "poppins";
     overflow-x:hidden;
     font-size:13px;
-    background-color : #405598;
+    background-color : #ffffff;
     color : #000;
     margin : 0;
     padding : 0;
@@ -32,13 +32,13 @@ body{
     justify-content: space-around;
     margin: 20px auto;
     max-width: 1200px;
-    background-color: #033d06; /* Dark background to match the page's look */
+    /* background-color: #033d06; Dark background to match the page's look */
     padding: 20px;
     border-radius: 15px;
 }
 .box {
     background-color: #ffffff; /* White background inside each box */
-    border: 2px solid #2c3e50; /* Border color matching the dark theme */
+    border: 2px solid #3078d7; /* Border color matching the dark theme */
     border-radius: 15px; /* Rounded corners */
     padding: 20px;
     width: 30%;
@@ -49,7 +49,7 @@ body{
     justify-content: space-between;
 }
 .box h2 {
-    background-color: #009879; /* Greenish background for the heading */
+    background-color: #3078d7; /* Greenish background for the heading */
     color: #ffffff; /* White text */
     padding: 10px;
     border-radius: 10px;
@@ -64,7 +64,7 @@ body{
     height: 80px;
     border-radius: 50%;
     margin: 15px auto; /* Center the image */
-    border: 2px solid #009879; /* Add border around the profile picture */
+    border: 2px solid #3078d7; /* Add border around the profile picture */
 }
 .box p {
     color: #2c3e50; /* Darker text color */
@@ -73,20 +73,7 @@ body{
     text-align: justify;
 }
 
-button:nth-child(1) {
-    background-color: #ff6f61; /* Attractive red for Primary Wing */
-    color: white;
-}
 
-button:nth-child(2) {
-    background-color: #f1c40f; /* Bright yellow for Junior Wing */
-    color: white;
-}
-
-button:nth-child(3) {
-    background-color: #8e44ad; /* Purple for Middle Wing */
-    color: white;
-}
 
 button {
     border: none;
@@ -127,15 +114,7 @@ button:hover {
     line-height: 1.6;
 }
 
-.button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #fff;
-    border: 2px solid #000;
-    border-radius: 25px;
-    font-size: 16px;
-    cursor: pointer;
-}
+
 
 .button:hover {
     background-color: #000;
@@ -157,20 +136,20 @@ p {
     flex-grow: 1;
 }
 
-/* Colorful Button Styling */
+
 button:nth-child(1) {
-    background-color: #f39c12; /* Vibrant orange for Primary Wing */
-    color: white;
+    
+    color: black;
 }
 
 button:nth-child(2) {
-    background-color: #2ecc71; /* Bright green for Junior Wing */
-    color: white;
+    
+    color: black;
 }
 
 button:nth-child(3) {
-    background-color: #3498db; /* Attractive blue for Middle Wing */
-    color: white;
+    
+    color: black;
 }
 
 button {
@@ -239,39 +218,6 @@ img{
     margin: 0 5%;
 }
 
-.readmore {
-    width: 100%;
-    float: left;
-    margin-top: 40px;
-}
-
-.readmore a {
-    position: relative;
-    z-index: 1;
-    display: block;
-    padding: 13px 15px 10px;
-    width: 150px;
-    border: 1px solid #212121;
-    white-space: nowrap;
-    color: #212121;
-    font: 14px Poppins;
-    text-align: center;
-    letter-spacing: 1px;
-    margin: 0 auto;
-    border-radius: 100px;
-    transition: all 300ms;
-}
-
-.readmore a:hover, .readmore.readmoreWhite a:hover {
-    color: #fff;
-    background: #3078d7;
-}
-
-.readmore.readmoreWhite a {
-    color: #fff;
-    border-color: #fff;
-}
-
 .list {
     margin-bottom: 20px;
 }
@@ -316,21 +262,9 @@ img{
     color: #5d8d63;
 }
 
-.aim{
-    display: flex;
-    color: black;
-}
-.aim h3{
-    text-align: center;
-}
-.mission{
-    flex: 1;
-    padding: 20px;
-    border: 1px solid #333;
-    background-color: rgb(199, 223, 255);
-    margin: 5%;
-    border-radius: 20px;
-}
+
+
+
 
 .heading {
     width: 430px;
@@ -499,76 +433,6 @@ img{
     margin: 2px 0;
 }
 
-.searchContainer {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 99999;
-    background: rgba(255, 255, 255, 0.97);
-    display: none;
-}
-
-.searchContainer .searchClose {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    width: 70px;
-    cursor: pointer;
-}
-
-.searchContainer .searchClose:hover {
-    opacity: .7;
-}
-
-.searchContainer .searchBox {
-    position: absolute;
-    left: 50%;
-    top: 80%;
-    opacity: 0;
-    transform: translate(-50%, -50%);
-    width: 70%;
-    transition: all 300ms ease-in-out;
-}
-
-.searchContainer .searchBox.show {
-    top: 50%;
-    opacity: 1;
-}
-
-.searchContainer .searchBox input {
-    width: 80%;
-    float: left;
-    padding: 10px;
-    font: 50px 'Poppins Light';
-    color: #000;
-    outline: none;
-    border: none;
-    border-bottom: 1px solid #000;
-    background: none;
-}
-
-.searchContainer .searchBox button {
-    width: 20%;
-    text-align: center;
-    outline: none;
-    border: none;
-    background: #000;
-    color: #fff;
-    font-size: 30px;
-    line-height: 81px;
-    cursor: pointer;
-    border-radius: 80px;
-    transition: all 300ms ease-in-out;
-}
-
-.searchContainer .searchBox button:hover {
-    background: #3078d7;
-}/* Hide menu and burger initially for large screens */
-.burgerMenu {
-    display: none;
-}
 
 /* Basic styles for burger icon */
 .burgerMenu {
@@ -989,343 +853,9 @@ img{
     text-decoration: underline;
 }
 
-.leftNavi {
-    width: 100px;
-    position: absolute;
-    right: 5%;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 99;
-    display: none;
-}
 
-.leftNavi li {
-    margin: 5px 0;
-}
 
-.leftNavi li * {
-    transition: all 300ms ease-in-out;
-}
 
-.leftNavi li a {
-    width: 100px;
-    height: 100px;
-    display: block;
-    line-height: 105px;
-    text-align: center;
-    background: #3470A7;
-    color: #fff;
-    border-radius: 50%;
-    border: 5px solid rgba(255, 255, 255, 0.5);
-    position: relative;
-}
-
-.leftNavi li:nth-child(2) a {
-    background: #CD5B5D;
-}
-
-.leftNavi li:nth-child(3) a {
-    background: #46C085;
-}
-
-.leftNavi li a span {
-    width: 170px;
-    position: absolute;
-    top: 50%;
-    padding-right: 10px;
-    font-size: 20px;
-    line-height: normal;
-    text-shadow: 1px 1px 1px #000;
-    opacity: 0;
-    visibility: hidden;
-    right: 150%;
-    color: #fff;
-    text-align: right;
-    transform: translateY(-50%);
-}
-
-.leftNavi li a:hover {
-    border-color: rgba(0, 0, 0, 0.37);
-    color: rgba(0, 0, 0, 0.37);
-}
-
-.leftNavi li a:hover span {
-    right: 100%;
-    opacity: 1;
-    visibility: visible;
-}
-
-.counter-head {
-    width: 80%;
-}
-
-.counter-window {
-    width: 100%;
-    float: left;
-    text-align: center;
-    position: relative;
-}
-
-.counter-window h1,
-.counter-window h3 {
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-.counter-window h3 {
-    margin-bottom: 30px;
-    color: #212121;
-}
-
-.counter-window span {
-    color: #6d6d6d;
-    display: inline-block;
-    vertical-align: top;
-    font-weight: 400;
-}
-
-.counter-window span > span {
-    margin-bottom: 0;
-}
-
-.counter-window .circle {
-    background: #2980b9;
-    width: 200px;
-    line-height: 200px;
-    display: inline-block;
-    color: #212121;
-    border-radius: 100%;
-}
-
-.counter-window code, code > span {
-    display: block;
-    font-family: Monaco, monospace;
-    background: #444;
-    color: #212121;
-    padding: 20px;
-    font-size: 14px;
-    margin-bottom: 100px;
-}
-
-.counter-window code > span {
-    padding: 0;
-    margin: 0;
-}
-
-.counter-window .main-div-cou {
-    width: 20%;
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 -2px;
-    padding: 20px 10px;
-    text-align: center;
-    cursor: pointer;
-}
-
-.counter-window .main-div-cou .title-icon {
-    width: 100%;
-    float: left;
-    font-size: 25px;
-    text-align: center;
-    padding-bottom: 10px;
-    display: none;
-}
-
-.counter-window .main-div-cou .title-icon i {
-    width: 100%;
-    height: 60px;
-    line-height: 60px;
-    background: #212121;
-    color: #bababa;
-}
-
-.counter-window .main-div-cou .coun-data {
-    width: 100%;
-    float: left;
-    position: relative;
-}
-
-.counter-window .main-div-cou .counter {
-    font-size: 40px;
-    font-family: 'poppinsblack';
-    position: relative;
-    z-index: 1;
-    width: 140px;
-    height: 140px;
-    line-height: 140px;
-    border-radius: 50%;
-    border: 1px solid;
-}
-
-.counter-window .main-div-cou #counter1 {
-    color: #60A688;
-}
-
-.counter-window .main-div-cou #counter2 {
-    color: #6086A6;
-}
-
-.counter-window .main-div-cou #counter3 {
-    color: #A67E60;
-}
-
-.counter-window .main-div-cou #counter4 {
-    color: #A69460;
-}
-
-.counter-window .main-div-cou #counter5 {
-    color: #7A60A6;
-}
-
-.counter-window .main-div-cou #counter6 {
-    color: #7A60A6;
-}
-
-.counter-window .main-div-cou #counter7 {
-    color: #A69460;
-}
-
-.counter-window .main-div-cou #counter8 {
-    color: #60A688;
-}
-
-.counter-window .main-div-cou #counter9 {
-    color: #A66087;
-}
-
-.counter-window .main-div-cou .counter:after {
-    margin-left: 5px;
-}
-
-.counter-window .main-div-cou #counter4:after,
-.counter-window .main-div-cou #counter5:after,
-.counter-window .main-div-cou #counter6:after {
-    content: '';
-}
-
-.in-numbersContainer {
-    position: absolute;
-    width: 70%;
-    left: 50%;
-    top: 0;
-    bottom: 0;
-    margin-left: -35%;
-    background: #fff;
-    border: 7px solid #3078d7;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.37);
-    z-index: 9;
-    display: none;
-}
-
-.in-numberClose {
-    position: absolute;
-    right: 0;
-    top: 0;
-    font-size: 22px;
-    padding: 0 10px;
-    line-height: 36px;
-    color: #C40003;
-    cursor: pointer;
-}
-
-.in-numberClose:hover {
-    color: #212121;
-}
-
-.in-numbersContainer .in-numberBox {
-    padding: 50px 40px 40px;
-}
-
-.in-numbersContainer .in-numberBox h3 {
-    font: 24px poppinsblack;
-    border-bottom: 1px solid;
-    padding-bottom: 10px;
-}
-
-.tsRatio {
-    margin-bottom: 30px;
-}
-
-.tsRatio li {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 10px;
-    font: 22px poppinsblack;
-}
-
-.tsRatio li a .imgBox {
-    width: 80px;
-    margin: 0 auto 12px;
-}
-
-.tsRatio li a .imgBox img {
-    max-width: 100%;
-}
-.calendar-btn {
-    width: 150px;
-    float: right;
-    margin-top: -90px;
-}
-
-.calendar-btn a {
-    display: block;
-    border: 1px solid #000;
-    text-align: center;
-    padding: 10px;
-    color: #000;
-    font-size: 14px;
-    letter-spacing: 1px;
-    border-radius: 50px;
-    transition: all 300ms;
-}
-
-.calendar-btn a:hover {
-    background: #3078d7;
-    color: #fff;
-}
-
-.eventsContainer .bx-wrapper .bx-controls-direction a {
-    bottom: 50%;
-    margin-bottom: -15px;
-    opacity: 1;
-    background-size: 16px;
-    transition: all 300ms ease-in-out;
-}
-
-.eventsContainer .bx-wrapper .bx-controls-direction a:hover {
-    border: 1px solid #ccc;
-    background-size: 8px;
-}
-
-.eventsContainer .bx-wrapper .bx-prev {
-    left: 0;
-}
-
-.eventsContainer .bx-wrapper .bx-next {
-    right: 0;
-}
-
-.tieupBg {
-    background: #eef6f5;
-    background: linear-gradient(30deg, #ddf7f2, #ffe7e7);
-}
-
-.sclTieups ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.sclTieups ul li {
-    width: calc(100% / 10);
-    padding: 10px;
-}
-
-.sclTieups ul li a {
-    display: block;
-    padding: 5px;
-    border: 1px solid #ccc;
-}
 
 .footer {
     background: url(images/footer1.jpg) center right no-repeat #0a122d;
