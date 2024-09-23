@@ -252,6 +252,7 @@ img{
     background: #3078d7;
     position: relative;
     z-index: 1;
+    width: 70%;
 }
 
 .logo a:before {

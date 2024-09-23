@@ -252,6 +252,7 @@ img{
     background: #3078d7;
     position: relative;
     z-index: 1;
+    width: 70%;
 }
 
 .logo a:before {
@@ -1019,7 +1020,7 @@ img{
 
 .admission-container h1 {
     text-align: center;
-    color: #333;
+    color: #3078d7;
     font-size: 32px;
     margin-bottom: 20px;
 }
