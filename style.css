@@ -3223,3 +3223,36 @@ img{
     }
   }
   
+
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.hamburger .fa-bars {
+    color: #333;
+}
+
+/* Ensure the topQuickLinks hide on mobile and show hamburger */
+@media (max-width: 890px) {
+    .topQuickLinks {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .topQuickLinks li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}

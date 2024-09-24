@@ -1,7 +1,8 @@
 function toggleMenu() {
-    const menu = document.getElementById('menu');
-    const burgerMenu = document.querySelector('.burgerMenu');
-    
-    menu.classList.toggle('open');
-    burgerMenu.classList.toggle('open');
+    var nav = document.getElementById("navLinks");
+    if (header.style.display === "block") {
+        header.style.display = "none";
+    } else {
+        header.style.display = "block";
+    }
 }
