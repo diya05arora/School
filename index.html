@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DUV INTERNATIONAL SCHOOL</title>
     <link href="style.css" rel="stylesheet" type="text/css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../images/favicon.png" rel="shortcut icon">
-    <link href="magnify/jquery.magnify.css" rel="stylesheet" type="text/css">
-    <link href="css/fontawesome-all.css" rel="stylesheet" type="text/css">
-    <link href="css/fontawesome-all.min.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
+     <!-- Font Awesome Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <style>
         .galltitle {
             display: block;
@@ -35,20 +34,26 @@
 <body>
     <div class="wrapper">
 
-
-
-        <div class="logo leftTranslate"><a href=""><img src="images/logo_duv.png" alt=""></a>
-        </div>
-
-        <header class="header">
+        <nav>
+            <!-- Checkbox for toggling menu -->
+            <input type="checkbox" id="check">
+            <!-- Menu icon -->
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
             
-            <button class="hamburger" onclick="toggleMenu()">
-                <i class="fa fa-bars"></i>
-            </button>
+            <label class="logo leftTranslate"><a href=""><img src="images/logo_duv.png" alt=""></a>
+            </label>
+
+            <!-- <header class="header">
+            
+                <button class="hamburger" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </button> -->
 
 
             <ul class="topQuickLinks">
-                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="javascript:;" class="new-add-bl-"> Admission Info</a>
                     <div class="dropdown">
                         <ul class="fullwidth">
@@ -61,7 +66,7 @@
                 <li><a href="javascript:;" class="new-add-bl-"> Fee Details </a>
                     <div class="dropdown">
                         <ul class="fullwidth">
-                            <li><a href="feeStructure.html" target="_blank">Fee Structure</a></li>
+                            <li><a href="feeStructure.html">Fee Structure</a></li>
                             <li><a href="">Pay Fees</a></li>
                         </ul>
                     </div>
@@ -87,15 +92,15 @@
                 
 
 
-                <li><a href="login.html" target="_blank"><i class="fa fa-user"></i> Login</a>
+                <li><a href="login.html"><i class="fa fa-user"></i> Login</a>
                 </li>
 
 
 
-                <li><a href="indexcb.html" target="_blank">DUV Chatbot</a></li>
+                <li><a href="indexcb.html">DUV Chatbot</a></li>
                 
             </ul>
-        </header>
+        <!-- </header> -->
         
         
 
